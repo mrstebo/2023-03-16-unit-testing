@@ -1,0 +1,19 @@
+{
+  "name": "2023-03-16-unit-testing",
+  "version": "1.0.0",
+  "description": "The repository used for code examples for the Social Code talk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrstebo/2023-03-16-unit-testing.git"
+  },
+  "author": "Steven Atkinson <mrstebouk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrstebo/2023-03-16-unit-testing/issues"
+  },
+  "homepage": "https://github.com/mrstebo/2023-03-16-unit-testing#readme"
+}
