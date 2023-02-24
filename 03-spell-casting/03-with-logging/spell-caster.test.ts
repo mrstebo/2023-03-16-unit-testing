@@ -4,12 +4,18 @@ import { WingardiumLeviosa } from "./spells/wingardium-leviosa";
 import { Wizard } from "./wizard";
 
 describe("SpellCaster", () => {
+  let logger: jest.Mock;
+
+  beforeEach(() => {
+    logger = jest.fn();
+  });
+
   describe("castSpell", () => {
     it("should cast the spell if the wizard is powerful enough to cast the spell", async () => {
       const spell = new OculusRepairo();
       const wizard = new Wizard("Harry Potter", spell.levelRequired);
 
-      const spellCaster = new SpellCaster(wizard, spell);
+      const spellCaster = new SpellCaster(wizard, spell, logger);
 
       await expect(spellCaster.castSpell()).resolves.toBeUndefined();
     });
@@ -18,7 +24,7 @@ describe("SpellCaster", () => {
       const spell = new WingardiumLeviosa();
       const wizard = new Wizard("Harry Potter", spell.levelRequired - 1);
 
-      const spellCaster = new SpellCaster(wizard, spell);
+      const spellCaster = new SpellCaster(wizard, spell, logger);
 
       await expect(spellCaster.castSpell()).rejects.toThrow(
         "Wizard is not powerful enough to cast this spell"
@@ -28,8 +34,6 @@ describe("SpellCaster", () => {
     it("should log that the spell is being cast", async () => {
       const spell = new OculusRepairo();
       const wizard = new Wizard("Harry Potter", spell.levelRequired);
-
-      const logger = jest.fn();
 
       const spellCaster = new SpellCaster(wizard, spell, logger);
 
@@ -41,8 +45,6 @@ describe("SpellCaster", () => {
     it("should log that the spell being cast", async () => {
       const spell = new OculusRepairo();
       const wizard = new Wizard("Harry Potter", spell.levelRequired);
-
-      const logger = jest.fn();
 
       const spellCaster = new SpellCaster(wizard, spell, logger);
 
