@@ -1,13 +1,13 @@
 import { EventEmitter } from "stream";
 import { House } from "../shared/house";
+import { Student } from "../shared/student";
 import {
   AllocatedHouseEvent,
   FailedToAllocateHouseEvent,
   RemoveSortingHatEventListener,
   SortingHatEvent,
   SortingHatEvents,
-} from "../shared/sorting-hat-events";
-import { Student } from "../shared/student";
+} from "./sorting-hat-events";
 
 export class SortingHat {
   constructor(

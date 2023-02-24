@@ -1,5 +1,5 @@
-import { House } from "./house";
-import { Student } from "./student";
+import { House } from "../shared/house";
+import { Student } from "../shared/student";
 
 const ALLOCATED_HOUSE = "sorting_hat.allocated_house";
 const FAILED_TO_ALLOCATE_HOUSE = "sorting_hat.failed_to_allocate_house";

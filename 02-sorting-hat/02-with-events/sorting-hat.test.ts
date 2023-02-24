@@ -1,7 +1,7 @@
 import { House } from "../shared/house";
-import { SortingHatEvents } from "../shared/sorting-hat-events";
 import { Student } from "../shared/student";
 import { SortingHat } from "./sorting-hat";
+import { SortingHatEvents } from "./sorting-hat-events";
 
 describe("SortingHat", () => {
   let sortingHat: SortingHat;
