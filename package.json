@@ -4,8 +4,6 @@
   "description": "The repository used for code examples for the Social Code talk",
   "main": "index.js",
   "scripts": {
-    "preci": "rm -rf node_modules",
-    "ci": "yarn install --frozen-lockfile",
     "lint": "eslint .",
     "test": "jest"
   },
