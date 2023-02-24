@@ -1,5 +1,5 @@
-import { House } from "../shared/house";
-import { Student } from "../shared/student";
+import { House } from "./house";
+import { Student } from "./student";
 import { SortingHat } from "./sorting-hat";
 import { SortingHatEvents } from "./sorting-hat-events";
 

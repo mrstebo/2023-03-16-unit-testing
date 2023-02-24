@@ -1,6 +1,6 @@
-import { House } from "../shared/house";
-import { Student } from "../shared/student";
+import { House } from "./house";
 import { SortingHat } from "./sorting-hat";
+import { Student } from "./student";
 
 describe("SortingHat", () => {
   let sortingHat: SortingHat;
