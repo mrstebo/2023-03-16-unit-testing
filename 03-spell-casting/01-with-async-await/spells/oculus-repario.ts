@@ -1,8 +1,8 @@
 import { Spell } from "./spell";
 
 export class OculusRepairo implements Spell {
-  levelRequired = 1;
   utterance = "Oculus Repairo";
+  levelRequired = 1;
 
   cast(): Promise<void> {
     return Promise.resolve();

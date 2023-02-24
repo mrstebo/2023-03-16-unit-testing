@@ -1,6 +1,6 @@
 export interface Spell {
-  levelRequired: number;
   utterance: string;
+  levelRequired: number;
 
   cast(): Promise<void>;
 }
