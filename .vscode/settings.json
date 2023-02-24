@@ -7,5 +7,12 @@
     "eslint.validate": [
         "javascript",
         "typescript"
-    ]
+    ],
+    "jest.jestCommandLine": "yarn test",
+    "jest.shell": {
+        "executable": "/bin/bash",
+        "args": [
+            "--login"
+        ]
+    }
 }
