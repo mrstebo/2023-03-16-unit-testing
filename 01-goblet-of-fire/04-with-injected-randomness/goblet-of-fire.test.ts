@@ -63,12 +63,16 @@ describe("GobletOfFire", () => {
       gobletOfFire.addName("Ron Weasley");
       gobletOfFire.addName("Hermione Granger");
 
-      jest.mocked(rng.generate).mockReturnValueOnce(1).mockReturnValueOnce(0).mockReturnValueOnce(0);
+      jest
+        .mocked(rng.generate)
+        .mockReturnValueOnce(1)
+        .mockReturnValueOnce(0)
+        .mockReturnValueOnce(0);
 
       const results = [
         gobletOfFire.removeName(),
         gobletOfFire.removeName(),
-        gobletOfFire.removeName()
+        gobletOfFire.removeName(),
       ];
 
       expect(results[0]).toBe("Ron Weasley");
