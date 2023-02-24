@@ -20,6 +20,4 @@ test.skip("wizard has a house", () => {
 });
 
 // TODO: Write this test
-test.todo("wizard's house has a name", () => {
-  // Implement this...
-});
+test.todo("wizard's house has a name");

@@ -21,7 +21,5 @@ describe("Wizard", () => {
   });
 
   // TODO: Write this test
-  it.todo("wizard's house has a name", () => {
-    // Implement this...
-  });
+  it.todo("wizard's house has a name");
 });
