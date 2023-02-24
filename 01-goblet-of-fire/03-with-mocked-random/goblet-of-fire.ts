@@ -30,6 +30,9 @@ export class GobletOfFire {
       throw new Error("There are no names in the goblet");
     }
 
-    return this.names.splice(Math.floor(Math.random() * this.names.length), 1)[0];
+    return this.names.splice(
+      Math.floor(Math.random() * this.names.length),
+      1
+    )[0];
   }
 }

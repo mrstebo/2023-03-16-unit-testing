@@ -57,7 +57,8 @@ describe("GobletOfFire", () => {
       gobletOfFire.addName("Ron Weasley");
       gobletOfFire.addName("Hermione Granger");
 
-      jest.spyOn(Math, "random")
+      jest
+        .spyOn(Math, "random")
         .mockReturnValueOnce(0.5)
         .mockReturnValueOnce(0.25)
         .mockReturnValueOnce(0.75);
@@ -65,7 +66,7 @@ describe("GobletOfFire", () => {
       const results = [
         gobletOfFire.removeName(),
         gobletOfFire.removeName(),
-        gobletOfFire.removeName()
+        gobletOfFire.removeName(),
       ];
 
       expect(results[0]).toBe("Ron Weasley");

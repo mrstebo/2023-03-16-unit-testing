@@ -7,7 +7,9 @@ import { RandomNumberGenerator } from "./random-number-generator";
 export class GobletOfFire {
   private readonly names: string[] = [];
 
-  constructor(private readonly rng: RandomNumberGenerator = new RandomNumberGenerator()) {}
+  constructor(
+    private readonly rng: RandomNumberGenerator = new RandomNumberGenerator()
+  ) {}
 
   /**
    * This adds a name to the goblet of fire
